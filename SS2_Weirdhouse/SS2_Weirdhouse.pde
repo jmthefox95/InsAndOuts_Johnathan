@@ -1,4 +1,6 @@
 // Johnathan Mahones
+// Random Color House
+// press "a" and "p" keys and mouse buttons to change colors
 
 float r = random(0, 255);
 float g = random(0, 255);
