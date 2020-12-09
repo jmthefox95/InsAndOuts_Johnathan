@@ -52,7 +52,6 @@ void draw () {
     triangle(40, 150, 280, 180, 160, 199);
     ellipse(125, 220, 30, 30);
     ellipse(178, 220, 30, 30);
-    println (width/2, height/2, potVal, potVal);
     println ("val:" + val);
     println ("potVal:" + potVal);
     println ("buttonVal:" + buttonVal);
