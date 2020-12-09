@@ -25,7 +25,7 @@ void setup () {
   size(400,500); 
   
   printArray(Serial.list()); // this line prints the port list to the console
-  String portName = Serial.list()[1]; //change the number in the [] for the port you need
+  String portName = Serial.list()[0];
   myPort = new Serial(this, portName, 9600);
 }
 
@@ -57,4 +57,4 @@ void draw () {
     println ("potVal:" + potVal);
     println ("buttonVal:" + buttonVal);
   }
-}
+{}
