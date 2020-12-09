@@ -21,7 +21,7 @@ float b = random(0, 255);
 
 void setup () {
   music = new SoundFile(this, "maydaypartyanimallive.mp3");
-  music.loop();
+  //music.loop();
   size(400,500); 
   
   printArray(Serial.list()); // this line prints the port list to the console
@@ -56,5 +56,4 @@ void draw () {
     println ("val:" + val);
     println ("potVal:" + potVal);
     println ("buttonVal:" + buttonVal);
-  }
-{}
+}
