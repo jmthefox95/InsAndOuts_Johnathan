@@ -49,7 +49,7 @@ void draw () {
   
     rect(103, 200, 120, 123);
     rect(103, 200, 120, 123);
-    triangle(40, 150, 280, 180, 160, 199);
+    triangle(40, 150, potVal, 180, 160, 199);
     ellipse(125, 220, 30, 30);
     ellipse(178, 220, 30, 30);
     println ("val:" + val);
