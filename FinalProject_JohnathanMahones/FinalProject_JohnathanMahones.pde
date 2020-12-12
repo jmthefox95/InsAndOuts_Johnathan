@@ -48,10 +48,17 @@ void draw () {
     background (0, 0, 255);
   }
   
+    fill(potVal, 63, 100);
+    rect(103, potVal, 120, 123);
     rect(103, 200, 120, 123);
-    rect(103, 200, 120, 123);
-    triangle(40, 150, 280, 180, 160, 199);
-    ellipse(125, 220, 30, 30);
+    
+    fill(potVal, 75, 11);
+    triangle(40, potVal, 280, 180, 160, 199);
+    
+    fill(potVal, 44, 23);
+    ellipse(125, potVal, 30, 30);
+    
+    fill(potVal, 75, potVal);
     ellipse(potVal, 220, 30, potVal);
     println ("val:" + val);
     println ("potVal:" + potVal);
