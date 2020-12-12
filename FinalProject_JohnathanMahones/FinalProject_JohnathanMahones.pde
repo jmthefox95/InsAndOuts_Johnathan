@@ -2,7 +2,8 @@ import processing.sound.*;
 
 // Johnathan Mahones
 // Random Color House
-// press "a" and "p" keys and mouse buttons to change colors
+// twist pedometer to affect the porportions and color of the shapes
+// press button to change color of background
 
 import processing.sound.*;
 import processing.serial.*;
@@ -47,11 +48,16 @@ void draw () {
     background (0, 0, 255);
   }
   
-    rect(103, 200, 120, 123);
-    rect(103, 200, 120, 123);
-    triangle(40, 150, 280, 180, 160, 199);
+    fill(potVal, 23, 41);
+    rect(103, potVal, 120, potVal);
+    rect(103, potVal, 120, 123);
+    
+    fill(0, 255, 11);
+    triangle(40, 150, potVal, 180, 160, 199);
+    
+    fill(11, potVal, 50);
     ellipse(125, 220, 30, 30);
-    ellipse(178, 220, 30, 30);
+    ellipse(potVal, 220, 30, potVal);
     println ("val:" + val);
     println ("potVal:" + potVal);
     println ("buttonVal:" + buttonVal);
